@@ -20,7 +20,7 @@ namespace WebApp_ConMySql.Controllers
         }
 
         [HttpGet]
-        public IList<Trabajo> Listar()
+        public IList<Trabajo> ListarTrabajo()
         {
             return (this._dbContext.Trabajo.Include(x => x.Usuario).ToList());
         }

@@ -26,7 +26,7 @@ namespace WebApp_ConMySql.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Usuario>> UsuarioPorId(int id)
+        public async Task<ActionResult<Usuario>> ConsultaUsuarioPorId(int id)
         {
             return await _mediator.Send(new ConsultaId.ConsultaPorId { Id = id });
         }
